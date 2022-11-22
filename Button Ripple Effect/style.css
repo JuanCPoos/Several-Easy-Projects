@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0px;
     display: flex;
     justify-content: center;
@@ -9,9 +9,40 @@ body{
 
 }
 
-.btn{
+.btn {
     background-color: pink;
-    padding:20px 40px;
+    padding: 20px 40px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn span {
+    position: relative;
+    z-index: 1;
+    /* propiedad para dejar el botón por encima del efecto aplicado */
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    background-color: orangered;
+    width: 0px;
+    height: 0px;
+    /* con las siguientes propiedades vamos a centrar 
+    un cuadrado que luego convertimos en circulo con border-radius.
+    */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width .5s, height .5s;
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px;
 }
