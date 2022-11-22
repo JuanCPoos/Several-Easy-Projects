@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+</head>
+
+<body>
+    <h2>Digital Clock</h2>
+    <div class="clock">
+        <div>
+            <span id="hour">00</span>
+            <span class="text">Hours</span>
+        </div>
+        <div>
+            <span id="minutes">00</span>
+            <span class="text">Minutes</span>
+        </div>
+        <div>
+            <span id="seconds">00</span>
+            <span class="text">Seconds</span>
+        </div>
+        <div>
+            <span id="ampm">AM</span>
+        </div>
+    </div>
+    <div class="paises">
+        <form action="">
+            <select name="" id="selectPaises">
+                <optgroup label="América">
+                    <option value="">Eligue un país</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="bolivia">Bolivia</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="chile">Chile</option>
+                    <option value="paraguay">Paraguay</option>
+                    <option value="paraguay">Venezuela</option>
+                    <option value="paraguay">Uruguay</option>
+                </optgroup>
+                <optgroup label="Europa">
+                    <option value="">Italia</option>
+                    <option value="">España</option>
+                    <option value="">Portugal</option>
+                </optgroup>
+                <optgroup label="Asia">
+                    <option value="">Japón</option>
+                    <option value="">China</option>
+                    <option value="">Corea</option>
+                </optgroup>
+                <optgroup label="Oceanía">
+                    <option value="">Australia</option>
+                    <option value="">Nueva Zelanda</option>
+                </optgroup>
+
+            </select>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
