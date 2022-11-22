@@ -35,11 +35,11 @@ body {
     /* con las siguientes propiedades vamos a centrar 
     un cuadrado que luego convertimos en circulo con border-radius.
     */
-    left: 50%;
-    top: 50%;
+    left: var(--xPos);
+    top: var(--yPos);
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    transition: width .5s, height .5s;
+    transition: width .6s, height .6s;
 }
 
 .btn:hover::before {
