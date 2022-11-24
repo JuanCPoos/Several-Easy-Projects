@@ -34,4 +34,20 @@ body {
     /*ubicamos los objetos uno al lado del otro*/
     justify-content: space-between;
     /* un espacio en medio para que los elementos queden en punta*/
+    padding: 0 5px;
+}
+
+.counter-container p {
+    font-size: 18px;
+    color: white;
+    text-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.total-counter {
+    color: blue;
+}
+
+.remaining-counter {
+    color: blue;
+
 }

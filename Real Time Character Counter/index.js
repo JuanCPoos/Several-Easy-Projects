@@ -1,0 +1,1 @@
+const txtEl = document.getElementById('textarea');
