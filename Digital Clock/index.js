@@ -3,7 +3,8 @@ const hourElem = document.getElementById("hour");
 const minutesElem = document.getElementById("minutes");
 const secondElem = document.getElementById("seconds");
 const ampmElem = document.getElementById("ampm");   
-const paisesElem = document.getElementById("selectPaises");
+/* const paisesElem = document.getElementById("selectPaises"); */
+const $select = document.querySelector("#selectPaises");
 
 /* obtenemos los datos de la computadora, usando el constructor de fechas */
 function updateClock() { 
@@ -34,4 +35,25 @@ function updateClock() {
     }, 1000)
 }
 
+function optionChange() {
+    console.log("Horario en desarrollo");
+    opcion = confirm("Horario mundial en desarrollo");
+    
+} 
+/* const optionChange = () => {
+    console.log("Option change activated");
+    //messa("Horarios en desarrollo");
+    
+}; */
+
 updateClock();
+
+/* Al escuchar un llamada cambio de opción ejecuta la
+function optionChange() */
+
+$select.addEventListener("change", () => {    
+    if (cont == 1) {
+        optionChange();
+        cont++;
+    }
+});
